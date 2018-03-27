@@ -11,3 +11,7 @@ Common secrets store in CredHub for cloud.gov
 1. Concourse uses the same common CredHub for [credential management](https://concourse-ci.org/creds.html#credhub)
     1. This will require Concourse to accept absolute paths for interpolation in pipelines (It might not currently support this).
 1. Existing secrets should be _manually_ loaded into CredHub to initialize the store, and rotation performed _manually_ until we can test dependencies in automatically generated credentials (common ca signed certs, public_key and cert with same private_key, etc.)
+
+### Manifest changes
+1. `cg-deploy-bosh` will need to name directors uniquely in [`cg-deployment.yml`](https://github.com/18F/cg-deploy-bosh/blob/master/bosh-deployment.yml#L174)
+    1. bosh (director) certificates will probably need to replaced so names on certs match the unique director names.
