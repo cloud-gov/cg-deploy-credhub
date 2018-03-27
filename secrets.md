@@ -16,5 +16,6 @@ Common secrets store in CredHub for cloud.gov
 1. `cg-deploy-bosh` will need to name directors uniquely in [`cg-deployment.yml`](https://github.com/18F/cg-deploy-bosh/blob/master/bosh-deployment.yml#L174)
     1. bosh (director) certificates will probably need to replaced so names on certs match the unique director names.
 1. Remaining `cg-deploy-bosh` merged secrets + yaml in `*-bosh-*.yml` will need to migrate to CredHub, terraform, or public manifests.
-1. Remaining `cg-deploy-concourse` merged secrets + yaml in `concourse-tooling-*.yml` will need to migrade to CredHub, terraform, or public manifests.
+1. Remaining `cg-deploy-concourse` merged secrets + yaml in `concourse-tooling-*.yml` will need to migrate to CredHub, terraform, or public manifests.
+1. Remaining `cg-deploy-powerdns` merged secrets + yaml in `*-pdns*.yml` will need to migrate to CredHub, terraform, or public manifests.
 
