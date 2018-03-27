@@ -24,6 +24,7 @@ Common secrets store in CredHub for cloud.gov
 1. `cg-deploy-prometheus` secrets accessed as varsfile `*-prometheus.yml` will need to migrate to CredHub, terraform, or public manifests.
 1. Remaining `cg-deploy-nessus-manager` merged secrets + yaml in `nessus-manager.*.yml` will need to migrate to CredHub, terraform, or public manifests.
 #### development, staging, and production bosh
-1. `cg-deploy-cf` secrets accessed as varsviles `secrets.yml` will need to migrate to CredHub, terraform, or public manifests.
+1. `cg-deploy-cf` secrets accessed as varsfile `secrets.yml` will need to migrate to CredHub, terraform, or public manifests.
     1. Most of these are setup in `cf-deployment` and various opsfiles in `cg-deploy-cf/bosh/opsfiles`. We should maybe refactor the portions we control to use `user` types in credhub instead of direct access to passphrase/client secret in a `password` type.
-
+1. `cg-deploy-elasticache-broker` secrets accessed as varsfile `secrets.yml` will need to migrade to CredHub.
+1.
