@@ -19,4 +19,5 @@ Common secrets store in CredHub for cloud.gov
 1. Remaining `cg-deploy-concourse` merged secrets + yaml in `concourse-tooling-*.yml` will need to migrate to CredHub, terraform, or public manifests.
 1. Remaining `cg-deploy-powerdns` merged secrets + yaml in `*-pdns*.yml` will need to migrate to CredHub, terraform, or public manifests.
 1. `cg-deploy-prometheus` secrets accessed as varsfile `*-prometheus.yml` will need to migrate to CredHub, terraform, or public manifests.
+1. Remaining `cg-deploy-nessus-manager` merged secrets + yaml in `nessus-manager.*.yml` will need to migrate to CredHub, terraform, or public manifests.
 
