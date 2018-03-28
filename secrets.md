@@ -28,4 +28,5 @@ Common secrets store in CredHub for cloud.gov
     1. Most of these are setup in `cf-deployment` and various opsfiles in `cg-deploy-cf/bosh/opsfiles`. We should maybe refactor the portions we control to use `user` types in credhub instead of direct access to passphrase/client secret in a `password` type.
 1. `cg-deploy-elasticache-broker` secrets accessed as varsfile `secrets.yml` will need to migrade to CredHub.
 1. Remaining `cg-deploy-kubernetes` merged secrets + yaml in `*-kubernetes.yml` will need to migrate to CredHub, terraform, or public manifests.
+1. Remaining `cg-deploy-logsearch` merged secrets + yaml in `logsearch-*.yml` will need to migrate to CredHub, terraform, or public manifests.
 
