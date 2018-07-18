@@ -1,0 +1,18 @@
+production-bosh:
+  shibboleth-production:
+    idp_ssl_certificate:
+      ca:
+      certificate:
+      private_key:
+    idp_signing_certificate:
+      ca:
+      certificate:
+      private_key:
+    idp_encryption_certificate:
+      ca:
+      certificate:
+      private_key:
+    idp_sealer_password:
+    production_bosh_client: #should use absolute path in pipeline
+      username: (( grab tooling-bosh.productionbosh.uaa_ci_client.username ))
+      password: (( grab tooling-bosh.productionbosh.uaa_ci_client.password ))
